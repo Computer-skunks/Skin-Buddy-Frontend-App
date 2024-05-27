@@ -8,7 +8,6 @@ import { AuthContext } from '../../../AuthProvider';
 import axios from 'axios';
 import mbtiData from '../../assets/mbtiResult.json';
 
-/* ================ MBTI 결과 값 불러오기================  */
 
 export default function MbtiTestResultScreen() {
   const [doScore, setDoScore] = useState(null);
@@ -17,11 +16,6 @@ export default function MbtiTestResultScreen() {
   const [wtScore, setWtScore] = useState(null);
 
   const { refreshMbti, skinType, setSkinType, homeProfile } = useContext(AuthContext);
-
-
-
-  
-
 
 
   useFocusEffect( //탭 활성화 인식
@@ -64,7 +58,7 @@ export default function MbtiTestResultScreen() {
     };
 
     fetchScores();
-  }, []); // [] 의존성 배열이 비어 있으므로 컴포넌트 마운트 시 한 번만 실행
+  }, []);
 
   // 각 점수에 대한 단어 계산 및 MBTI 결과 업데이트
   useEffect(() => {
@@ -121,7 +115,6 @@ export default function MbtiTestResultScreen() {
         console.error('PUT 요청 실패:', error.message);
         console.error('에러 데이터:', error.response ? error.response.data : '응답 없음');
         console.error('요청 데이터:', postData);
-        // 에러 처리 로직 추가 가능
       });
 
   }

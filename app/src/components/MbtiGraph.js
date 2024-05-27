@@ -1,9 +1,9 @@
-import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
-import React, { useState } from 'react';
-import { colors, width, height, styleG } from '../assets/globalStyles'; //width,height 받아오기
+import { View, Text, StyleSheet } from 'react-native';
+import React from 'react';
+import { width, height } from '../assets/globalStyles'; //width,height 받아오기
 
 
-export default function BasicButton({ category, score, type }) {
+export default function BasicButton({ category, score }) {
 
 
 

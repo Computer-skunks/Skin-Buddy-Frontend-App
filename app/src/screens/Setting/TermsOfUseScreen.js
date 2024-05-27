@@ -1,7 +1,7 @@
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, ScrollView } from 'react-native';
-import { styleG, colors, width, height } from '../../assets/globalStyles';
+import {  width } from '../../assets/globalStyles';
 import axios from 'axios';
 
 export default function TermsOfUseScreen() {
