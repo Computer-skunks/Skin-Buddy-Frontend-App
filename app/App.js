@@ -289,10 +289,9 @@ function History() {
 
 function App() {
 
-  // 상태를 판단하기 위한 추가된 코드
+  // 로그인 상태를 판단하기 위한 추가된 코드
   const [isLoggedIn, setIsLoggedIn] = useState(false);
 
-  // 컴포넌트가 마운트될 때 로그인 상태를 확인합니다.
   useEffect(() => {
     const checkLoginStatus = async () => {
       try {
@@ -393,7 +392,6 @@ function App() {
 }
 
 const styles = StyleSheet.create({
-
   image: {
     width: width * 30,
     height: height * 30,

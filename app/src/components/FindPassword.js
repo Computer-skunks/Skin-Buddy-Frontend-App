@@ -1,10 +1,10 @@
 
-import React, { useState, useEffect, useRef } from 'react';
-import { StyleSheet, Text, View, Image, Alert } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, View, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import InputTextBox from './InputTextBox';
 import BasicButton from './BasicButton';
-import { styleG, colors, width, height } from '../assets/globalStyles';
+import { colors, width, height } from '../assets/globalStyles';
 import * as Clipboard from 'expo-clipboard';
 import axios from 'axios';
 
@@ -25,7 +25,7 @@ export default function FindPassword() {
     // 클립보드에 텍스트 복사
     const copyToClipboard = async (text) => {
         try{
-        await Clipboard.setString(text);
+        Clipboard.setString(text);
         console.log('텍스트가 클립보드에 복사되었습니다.');
         }catch(error){
             console.log(error)

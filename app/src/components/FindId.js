@@ -1,10 +1,10 @@
 
-import React, { useState, useEffect, useRef } from 'react';
-import { StyleSheet, Text, View, Image, Alert } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, View, Alert } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import InputTextBox from './InputTextBox';
 import BasicButton from './BasicButton';
-import { styleG, colors, width, height } from '../assets/globalStyles';
+import { colors, width, height } from '../assets/globalStyles';
 import * as Clipboard from 'expo-clipboard';
 import axios from 'axios';
 

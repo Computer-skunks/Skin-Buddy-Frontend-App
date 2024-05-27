@@ -1,10 +1,9 @@
 
 
-import React, { useState, useEffect, useRef, useContext } from 'react';
-import { StyleSheet, Text, View, Image, TextInput, Alert, ActivityIndicator } from 'react-native';
-import { styleG, colors, width, height } from '../../assets/globalStyles';
+import React, { useState, useEffect, useContext } from 'react';
+import { StyleSheet, Text, View,  TextInput, Alert, ActivityIndicator } from 'react-native';
+import {  colors, width, height } from '../../assets/globalStyles';
 import { KeyboardAwareScrollView } from 'react-native-keyboard-aware-scroll-view';
-import InputTextBox from '../../components/InputTextBox';
 import BasicButton from '../../components/BasicButton';
 import { AuthContext } from '../../../AuthProvider';
 import { useNavigation } from '@react-navigation/native';

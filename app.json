@@ -4,7 +4,7 @@
     "slug": "skin-buddy",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./app/src/assets/img/adaptive-icon.png",
+    "icon": "./assets/images/icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
     "ios": {
@@ -15,17 +15,17 @@
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage":  "./app/src/assets/img/adaptive-icon.png",
+        "foregroundImage":  "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff",
         "googleMaps" : "1085525106935-e2krf98munkhl5rk4eaj77mun09fj3kc.apps.googleusercontent.com",
-        "icon": "./app/src/assets/img/adaptive-icon.png"
+        "icon": "./assets/images/adaptive-icon.png"
       },
       "package": "com.jiyeon2002.skinbuddy"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./app/src/assets/img/adaptive-icon.png"
+      "favicon": "./assets/images/adaptive-icon.png"
     },  
     "plugins": [
       "expo-font"

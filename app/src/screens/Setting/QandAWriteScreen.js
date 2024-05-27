@@ -1,7 +1,7 @@
 
-import React, { useState, useEffect, useRef, useContext } from 'react';
-import { StyleSheet, Text, View, Image, TextInput, Alert, ActivityIndicator, KeyboardAvoidingView, Platform,ScrollView } from 'react-native';
-import { colors, width, height, styleG } from '../../assets/globalStyles';
+import React, { useState, useEffect, useContext } from 'react';
+import { StyleSheet, Text, View, TextInput, Alert, ActivityIndicator, KeyboardAvoidingView, Platform } from 'react-native';
+import { colors, width, height } from '../../assets/globalStyles';
 import Subseperator from '../../components/Subseperator'
 import BasicButton from '../../components/BasicButton';
 import { useNavigation } from '@react-navigation/native';

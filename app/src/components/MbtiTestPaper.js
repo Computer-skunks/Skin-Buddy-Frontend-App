@@ -250,8 +250,6 @@ function WtTestPaper({ onComplete }) {
         }
         setWtScore(score)
 
-        console.log(currentIndex)
-        console.log(wtKeys.length)
 
         if (currentIndex >= wtKeys.length-1) {
             saveWtResult(score);

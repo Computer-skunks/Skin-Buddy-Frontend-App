@@ -1,8 +1,6 @@
 
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState} from 'react';
 import { StyleSheet, Text, View, Image } from 'react-native';
-import { useNavigation } from '@react-navigation/native';
-import InputTextBox from '../../components/InputTextBox';
 import { styleG, colors, width, height } from '../../assets/globalStyles';
 import FindId from '../../components/FindId';
 import FindPassword from '../../components/FindPassword';
@@ -13,7 +11,6 @@ export default function App() {
   const [idButtonType, setIdButtonType]=useState(true)
   const [pwdButtonType, setPwdButtonType]=useState(false)
 
-  const navigation = useNavigation();
 
   const handleFindId=()=>{
     setIdButtonType(true)

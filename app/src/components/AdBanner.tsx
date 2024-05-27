@@ -1,8 +1,7 @@
 import React, { useState, useEffect } from 'react';
-import { Text, TouchableOpacity, StyleSheet, FlatList, Image, View } from 'react-native';
-import { StatusBar } from 'expo-status-bar';
+import { TouchableOpacity, StyleSheet, FlatList, Image, View } from 'react-native';
 import axios from 'axios'; // axios를 사용하여 API 호출
-import { colors, width, height, styleG } from '../assets/globalStyles';
+import { width, height } from '../assets/globalStyles';
 
 interface Advertisement {
   advertisementId: number;

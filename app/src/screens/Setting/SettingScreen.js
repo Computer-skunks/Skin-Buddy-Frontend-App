@@ -1,7 +1,7 @@
 
-import React, { useState, useEffect, useRef, useContext } from 'react';
+import React, {useContext } from 'react';
 import { StyleSheet, Text, View, Alert } from 'react-native';
-import { styleG, colors, width, height } from '../../assets/globalStyles';
+import { colors, width, height } from '../../assets/globalStyles';
 import Subseperator from '../../components/Subseperator';
 import BasicButton from '../../components/BasicButton';
 import { useNavigation } from '@react-navigation/native';
@@ -15,19 +15,6 @@ function List({ title, component, type }) {
   const { logout, deleteAccount, userId } = useContext(AuthContext);
 
   const navigation = useNavigation();
-
-
-  const DeleteAccount = async () => {
-    Alert.prompt(
-      '계정 탈퇴',
-      '비밀번호를 입력해주세요',
-      (pwd) => {
-        deleteAccount(pwd);
-      },
-      'secure-text',
-    );
-
-  }
 
 
   const LogoutProcess = async () => {

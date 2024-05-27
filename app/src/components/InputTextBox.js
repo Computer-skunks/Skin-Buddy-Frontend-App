@@ -1,7 +1,6 @@
-import React,{useState, useEffect} from 'react';
-import { Text, TouchableOpacity, StyleSheet, TextInput } from 'react-native';
-import { isBreakOrContinueStatement } from 'typescript';
-import { colors, width, height, styleG } from '../assets/globalStyles'; //width,height 받아오기
+import React, {useState, useEffect} from 'react';
+import { StyleSheet, TextInput } from 'react-native';
+import { colors, width, height } from '../assets/globalStyles'; //width,height 받아오기
 
 export default function InputTextBox({ title, onChangeText, type}) {
     const [secureType, setSecureType] = useState(false);

@@ -2,7 +2,7 @@
 import React, { useState, useEffect } from 'react';
 import { StyleSheet, Text, View, Image, ActivityIndicator, Alert } from 'react-native';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
-import { colors, width, height, styleG } from '../../assets/globalStyles'; //width,height 받아오기
+import { colors, width, height, styleG } from '../../assets/globalStyles';
 import BasicButton from '../../components/BasicButton'
 import axios from 'axios';
 import Subseperator from '../../components/Subseperator'
@@ -29,11 +29,9 @@ export default function ImprovementAnalysisResultScreen({ route }) {
     React.useCallback(() => {
       // 탭이 활성화될 때 실행되는 함수
       console.log('탭이 활성화되었습니다.');
-
       // 탭이 비활성화될 때 실행되는 함수
       return () => {
         console.log('탭이 비활성화되었습니다.');
-        // 여기에 실행하고자 하는 특정 함수를 추가합니다.
       };
     }, [])
   );
@@ -58,24 +56,6 @@ export default function ImprovementAnalysisResultScreen({ route }) {
     );
   }
 
-
-  function returnImage() {
-
-    console.log(recordId, pastData)
-    const postData = {
-      "recordId": recordId,
-      "pastRecordId": (pastData == "" ? null : pastData)
-    }
-    console.log(postData)
-    axios.post(returnPhotoUrl, postData)
-      .then(response => {
-        setImageData(response.data);
-      })
-      .catch(error => {
-        console.log('recordId:', recordId)
-        console.error('에러 발생:', error);
-      });
-  }
 
 
   const goDelete = async () => {
@@ -149,7 +129,7 @@ export default function ImprovementAnalysisResultScreen({ route }) {
           viewStyle={{
             width: width * 400,
             height: height * 650, marginTop: height * 20,
-          }} // 스타일을 설정하면 됩니다.
+          }}
           radius={10} // 그림자 radius
           offset={[5, 20]} // 그림자 위치 (x, y)
           startColor="#dde0ea" // 그림자 색상
@@ -212,7 +192,7 @@ export default function ImprovementAnalysisResultScreen({ route }) {
           viewStyle={{
             width: width * 400,
             height: height * 650, marginTop: height * 20,
-          }} // 스타일을 설정하면 됩니다.
+          }} 
           radius={10} // 그림자 radius
           offset={[5, 20]} // 그림자 위치 (x, y)
           startColor="#dde0ea" // 그림자 색상
@@ -269,7 +249,6 @@ const styles = StyleSheet.create({
     alignItems:'center',
     justifyContent: 'center',
     height: height * 380,
-    // backgroundColor: 'red',
   },
   ButtonArea: {
     flexDirection: 'row',
@@ -277,13 +256,11 @@ const styles = StyleSheet.create({
     justifyContent: 'flex-end',
     height: height * 70,
     marginRight: width * 20,
-    // backgroundColor: 'blue',
   },
 
   resultArea: {
     height: height * 500,
     alignItems:'center'
-    // backgroundColor: 'yellow',
   },
   imgArea: {
     flexDirection: 'row',
@@ -293,19 +270,15 @@ const styles = StyleSheet.create({
 
   },
   image: {
-    // margin: width * 10,
     width: width * 160,
     height: height * 160,
     borderRadius: 15,
-    // borderTopEndRadius: 10,
   },
   textArea: {
     justifyContent: 'center',
     alignItems: 'center',
     padding: width * 30,
     width: width * 400,
-    // borderWidth:1,
-    // borderColor:colors.darkGray
   },
   historyArea: {
     width: width * 450,
@@ -319,7 +292,6 @@ const styles = StyleSheet.create({
     width: width * 20,
     justifyContent: 'center',
     alignItems: 'center',
-    // backgroundColor: 'green',
     flexDirection: 'row',
     marginBottom: height * 30,
     marginTop: height * 30,
@@ -330,15 +302,12 @@ const styles = StyleSheet.create({
     height: height * 300,
     justifyContent: 'center',
     alignItems: 'center',
-
-    // backgroundColor:'green'
   }, afterArea: {
     flexDirection: 'column',
     justifyContent: 'center',
     alignItems: 'center',
     width: width * 200,
     height: height * 300,
-    // backgroundColor:'green'
   },
   beforeAfterBlock: {
     justifyContent: 'center',
@@ -346,11 +315,8 @@ const styles = StyleSheet.create({
     width: width * 100,
     height: height * 50,
     borderRadius: 15,
-    // borderBottomEndRadius: 15,
     marginTop: height * 20,
     borderWidth: 1,
-    // borderColor: 
-
   },
 
 

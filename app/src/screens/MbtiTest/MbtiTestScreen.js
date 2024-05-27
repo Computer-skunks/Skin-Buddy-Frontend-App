@@ -36,7 +36,7 @@ export default function MbtiTestScreen() {
       viewStyle={{
         width: width * 400,
         height: height * 650, marginTop: height * 20,
-      }} // 스타일을 설정하면 됩니다.
+      }} 
       radius={10} // 그림자 radius
       offset={[5, 20]} // 그림자 위치 (x, y)
       startColor="#dde0ea" // 그림자 색상

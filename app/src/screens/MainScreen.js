@@ -37,6 +37,7 @@ export default function MainScreen() {
   );
   
   useEffect(() => {
+    console.log('skinType:',skinType,' doScore:',doScore,'rsScore',rsScore,'pnScore',pnScore,'wtScore',wtScore);
     setLoading(true);
 
     setUserMbti(skinType);
@@ -44,8 +45,6 @@ export default function MainScreen() {
     setRsResult(rsScore);
     setPnResult(pnScore);
     setWtResult(wtScore);
-
-    console.log('skinType:',skinType,' doScore:',doScore,'rsScore',rsScore,'pnScore',pnScore,'wtScore',wtScore);
 
     ScoreCalcDO();
     ScoreCalcRS();

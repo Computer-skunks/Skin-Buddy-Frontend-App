@@ -1,11 +1,9 @@
-import React, { useState, useEffect, useRef } from 'react';
-import { StyleSheet, Text, View, Image, TouchableWithoutFeedback, FlatList } from 'react-native';
+import React, { useState } from 'react';
+import { StyleSheet, Text, View, TouchableWithoutFeedback, FlatList } from 'react-native';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
-import { colors, width, height, styleG } from '../../assets/globalStyles';
-import BasicButton from '../../components/BasicButton'
+import {  width, height, styleG } from '../../assets/globalStyles';
 import Subseperator from '../../components/Subseperator'
 import axios from 'axios';
-import { Shadow } from 'react-native-shadow-2';
 
 
 export default function NoticeScreen() {
@@ -25,7 +23,6 @@ export default function NoticeScreen() {
     }, [])
   );
 
-  const navigation = useNavigation();
 
   function noticeReturn() {
     axios.get(noticeUrl)

@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useContext } from 'react';
 import { StyleSheet, Text, View, TouchableWithoutFeedback, FlatList, Image } from 'react-native';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
+import { width, height, styleG } from '../../assets/globalStyles'; 
  
 import Subseperator from '../../components/Subseperator';
 import axios from 'axios';

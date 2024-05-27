@@ -1,8 +1,7 @@
-import React, { useState, useEffect, useRef, useContext } from 'react';
-import { StyleSheet, Text, View, Image, TouchableWithoutFeedback, FlatList } from 'react-native';
+import React, { useState,  useContext } from 'react';
+import { StyleSheet, Text, View, TouchableWithoutFeedback, FlatList } from 'react-native';
 import { useNavigation, useFocusEffect } from '@react-navigation/native';
 import { colors, width, height, styleG } from '../../assets/globalStyles';
-import BasicButton from '../../components/BasicButton'
 import Subseperator from '../../components/Subseperator'
 import axios from 'axios';
 import { AuthContext } from '../../../AuthProvider';

@@ -1,7 +1,7 @@
 
-import React,{useState, useEffect, useRef} from 'react';
-import { StyleSheet, Text, View, Image} from 'react-native';
-import { styleG, colors, width, height } from '../../assets/globalStyles';
+import React from 'react';
+import { StyleSheet, Text, View} from 'react-native';
+import { styleG, width } from '../../assets/globalStyles';
 
 export default function VersionInformationScreen() {
 
