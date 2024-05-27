@@ -1,36 +1,46 @@
 {
   "expo": {
-    "name": "skin-buddy",
+    "name": "skin buddy",
     "slug": "skin-buddy",
     "version": "1.0.0",
     "orientation": "portrait",
-    "icon": "./assets/images/icon.png",
+    "icon": "./app/src/assets/img/adaptive-icon.png",
     "scheme": "myapp",
     "userInterfaceStyle": "automatic",
-    "splash": {
-      "image": "./assets/images/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "minimumOSVersion": "11.0"
+      }
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/images/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
+        "foregroundImage":  "./app/src/assets/img/adaptive-icon.png",
+        "backgroundColor": "#ffffff",
+        "googleMaps" : "1085525106935-e2krf98munkhl5rk4eaj77mun09fj3kc.apps.googleusercontent.com",
+        "icon": "./app/src/assets/img/adaptive-icon.png"
+      },
+      "package": "com.jiyeon2002.skinbuddy"
     },
     "web": {
       "bundler": "metro",
       "output": "static",
-      "favicon": "./assets/images/favicon.png"
-    },
+      "favicon": "./app/src/assets/img/adaptive-icon.png"
+    },  
     "plugins": [
-      "expo-router"
+      "expo-font"
     ],
     "experiments": {
       "typedRoutes": true
-    }
+    },
+    "extra": {
+      "router": {
+        "origin": false
+      },
+      "eas": {
+        "projectId": "4cf682c0-39f1-44d3-ac6c-34911230567a"
+      }
+    },
+    "owner": "jiyeon2002"
   }
 }
