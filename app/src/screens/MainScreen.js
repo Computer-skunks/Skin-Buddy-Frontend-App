@@ -84,14 +84,14 @@ export default function MainScreen() {
     console.log('rsResult:', rsResult);
     if (rsResult > 29) {
       setRsResult(rsResult * 1.7);
-      setRsType('Sensitive');
+      setRsType('Resistent');
     } else {
       if (rsResult > 24) {
         setRsResult(rsResult * 2);
       } else {
         setRsResult(rsResult);
       }
-      setRsType('Resistent');
+      setRsType('Sensitive');
     }
   };
 

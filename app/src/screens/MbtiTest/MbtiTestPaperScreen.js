@@ -5,17 +5,6 @@ import MbtiTestPaper from '../../components/MbtiTestPaper'
 export default function MbtiTestPaperScreen() {
 
 
-
-  useFocusEffect(
-  React.useCallback(() => {
-    // 탭이 활성화될 때 실행되는 함수
-    return () => {
-      // 탭이 비활성화될 때 실행되는 함수
-    };
-  }, [])
-);
-
-
   return (
     <View style={styles.container}>
       <MbtiTestPaper></MbtiTestPaper>
@@ -32,3 +21,6 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+
+

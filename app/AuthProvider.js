@@ -212,6 +212,7 @@ export const AuthProvider = ({ children }) => {
 
             } catch (error) {
                 console.error('Failed to update user profile:', error);
+                
             }
             setLoading(false);
         }
@@ -236,6 +237,7 @@ export const AuthProvider = ({ children }) => {
                 })
                 .catch(error => {
                     // 요청 실패 시 처리
+                    logout()
                     console.error('Failed to load user profile:', error);
                 });
         }

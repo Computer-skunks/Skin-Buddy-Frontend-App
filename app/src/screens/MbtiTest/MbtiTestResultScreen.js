@@ -64,7 +64,7 @@ export default function MbtiTestResultScreen() {
   useEffect(() => {
     if (doScore !== null && rsScore !== null && pnScore !== null && wtScore !== null) {
       const doWord = doScore < 27 ? 'D' : 'O';
-      const rsWord = rsScore < 31 ? 'R' : 'S';
+      const rsWord = rsScore < 31 ? 'S' : 'R';
       const pnWord = pnScore < 31 ? 'N' : 'P';
       const wtWord = wtScore < 41 ? 'T' : 'W';
 
@@ -78,12 +78,13 @@ export default function MbtiTestResultScreen() {
     }
   }, [doScore, rsScore, pnScore, wtScore]);
 
-  
+ 
 
   const updateResult = async (doScore, rsScore, pnScore, wtScore, mbtiWord) => {
     const updateMbtiURL = "http://52.79.237.164:3000/user/skin/bauman"
 
     const userId = await AsyncStorage.getItem('userId');
+
 
 
     const postData = {
