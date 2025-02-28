@@ -83,7 +83,7 @@ function RsTestPaper({ onComplete }) {
     const [currentIndex, setCurrentIndex] = useState(0); // 현재 인덱스를 추적하는 상태
     const [rsScore, setRsScore] = useState(0)
 
-    const rsKeys = Object.keys(mbtiData.RS); // DO 키 목록
+    const rsKeys = Object.keys(mbtiData.RS);
 
     const saveRsResult = async (score) => {
         try {
@@ -215,7 +215,7 @@ function WtTestPaper({ onComplete }) {
     const [wtScore, setWtScore] = useState(0)
     const [currentIndex, setCurrentIndex] = useState(0); // 현재 인덱스를 추적하는 상태
 
-    const wtKeys = Object.keys(mbtiData.WT); // DO 키 목록
+    const wtKeys = Object.keys(mbtiData.WT);
 
     const saveWtResult = async (score) => {
         try {
@@ -288,15 +288,15 @@ export default function MbtiTestPaper() {
     const [currentTest, setCurrentTest] = useState('DO'); // 현재 진행 중인 테스트 유형을 추적합니다.
 
     const handleDoTestComplete = () => {
-        // doTestPaper가 완료되었을 때 RS 테스트로 전환합니다.
+        //테스트 완료시 RS
         setCurrentTest('RS');
     };
     const handleRsTestComplete = () => {
-        // doTestPaper가 완료되었을 때 RS 테스트로 전환합니다.
+        //테스트 완료시 PN
         setCurrentTest('PN');
     };
     const handlePnTestComplete = () => {
-        // doTestPaper가 완료되었을 때 RS 테스트로 전환합니다.
+        //테스트 완료시 WT
         setCurrentTest('WT');
     };
     const handleWtTestComplete = () =>{

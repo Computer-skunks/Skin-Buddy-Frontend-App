@@ -98,7 +98,8 @@ const DermatologyMapScreen = () => {
 const styles = StyleSheet.create({
   container: {
     width:width*430,
-    height: height* 700
+    height: height* 700,
+
   },
   map: {
     flex:1

@@ -56,12 +56,12 @@ export default function BasicButton({ category, score }) {
       )
 
 
-    case 'Resistent':
+    case 'Sensitive':
 
       return (
         <View style={styles.conatiner}>
-          <View style={{ width: width * 160, height: height * 23, backgroundColor: "#FFD159", top: 9, left: 30, position: 'absolute' }}></View>
-          <View style={{ width: width * score, height: height * 23, backgroundColor: "#FFF48E", top: 9, right: 30, position: 'absolute' }}></View>
+          <View style={{ width: width * 160, height: height * 23, backgroundColor: "#FFD159", top: 9, right: 30, position: 'absolute' }}></View>
+          <View style={{ width: width * score, height: height * 23, backgroundColor: "#FFF48E", top: 9,left: 30, position: 'absolute' }}></View>
           <View style={styles.leftItem}>
             <View style={[styles.leftCircle, { backgroundColor: "#FFE194" }]}>
               <Text style={styles.circleText}>R</Text>
@@ -76,12 +76,12 @@ export default function BasicButton({ category, score }) {
           </View>
         </View>
       )
-    case 'Sensitive':
+    case 'Resistent':
 
       return (
         <View style={styles.conatiner}>
-          <View style={{ width: width * 160, height: height * 23, backgroundColor: "#FFF48E", top: 9, left: 30, position: 'absolute' }}></View>
-          <View style={{ width: width * score, height: height * 23, backgroundColor: "#FFD159", top: 9, right: 30, position: 'absolute' }}></View>
+          <View style={{ width: width * 160, height: height * 23, backgroundColor: "#FFF48E", top: 9, right: 30, position: 'absolute' }}></View>
+          <View style={{ width: width * score, height: height * 23, backgroundColor: "#FFD159", top: 9, left: 30, position: 'absolute' }}></View>
           <View style={styles.leftItem}>
             <View style={[styles.leftCircle, { backgroundColor: "#FFE194" }]}>
               <Text style={styles.circleText}>R</Text>
